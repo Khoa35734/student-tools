@@ -26,8 +26,11 @@ student-tools/
 
 ## Các tính năng chính
 
+## Các tính năng chính
+
 - **Calculator (`src/calculator.py`)**: Hỗ trợ các phép tính toán học cơ bản (`add`, `subtract`, `multiply`, `divide`).
 - **Converter (`src/converter.py`)**: Hỗ trợ chuyển đổi giữa các đơn vị đo lường (nhiệt độ, độ dài,...).
+  - Temperature converter: chuyển đổi °C <-> °F (`celsius_to_fahrenheit`, `fahrenheit_to_celsius`).
 - **Validator (`src/validator.py`)**: Kiểm tra tính hợp lệ của dữ liệu sinh viên (mã sinh viên, email,...).
 
 ## Hướng dẫn cài đặt và chạy thử
