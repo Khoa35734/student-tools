@@ -21,5 +21,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(divide(6, 2), 3.0)
         self.assertAlmostEqual(divide(5, 2), 2.5)
 
+    def test_divide_by_zero(self):
+        with self.assertRaisesRegex(ValueError, "Cannot divide by zero"):
+            divide(10, 0)
+
 if __name__ == "__main__":
     unittest.main()
