@@ -2,5 +2,8 @@
 Module Converter: Cung cấp các công cụ chuyển đổi đơn vị.
 """
 
-# Chức năng chuyển đổi nhiệt độ (celsius_to_fahrenheit, fahrenheit_to_celsius)
-# sẽ được phát triển trong Issue #1 theo yêu cầu bài lab.
+def celsius_to_fahrenheit(celsius):
+    return celsius * 9 / 5 + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5 / 9
