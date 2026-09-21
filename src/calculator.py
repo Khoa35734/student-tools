@@ -16,10 +16,10 @@ def multiply(a, b):
 
 def divide(a, b):
     """
-    Chia số a cho số b.
+    Divide number a by number b.
 
     Raises:
-        ValueError: Nếu b bằng 0.
+        ValueError: If b is zero.
     """
     if b == 0:
         raise ValueError("Cannot divide by zero")
