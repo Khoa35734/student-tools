@@ -16,7 +16,12 @@ def multiply(a, b):
 
 def divide(a, b):
     """
-    Chia số a cho số b.
-    Lưu ý: Hàm mô phỏng hành vi ban đầu (chưa kiểm tra điều kiện b == 0).
+    Divide number a by number b.
+
+    Raises:
+        ValueError: If b is zero.
     """
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+
     return a / b

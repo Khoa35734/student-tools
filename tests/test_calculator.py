@@ -17,9 +17,18 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(multiply(-2, 3), -6)
         self.assertEqual(multiply(5, 0), 0)
 
-    def test_divide(self):
-        self.assertEqual(divide(6, 2), 3.0)
+    def test_divide_positive_numbers(self):
+        self.assertEqual(divide(10, 2), 5)
+
+    def test_divide_negative_numbers(self):
+        self.assertEqual(divide(-10, 2), -5)
+
+    def test_divide_decimal_numbers(self):
         self.assertAlmostEqual(divide(5, 2), 2.5)
+
+    def test_divide_by_zero(self):
+        with self.assertRaisesRegex(ValueError, "Cannot divide by zero"):
+            divide(10, 0)
 
 if __name__ == "__main__":
     unittest.main()
