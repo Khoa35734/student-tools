@@ -33,6 +33,22 @@ print(divide(10, 2))    # Kết quả: 5.0
 
 Hỗ trợ chuyển đổi giữa các đơn vị đo lường như nhiệt độ (°C <-> °F), độ dài, v.v.
 
+### Chuyển đổi nhiệt độ
+
+```python
+from src.converter import celsius_to_fahrenheit, fahrenheit_to_celsius
+
+celsius_to_fahrenheit(100)   # 212.0
+celsius_to_fahrenheit(0)     # 32.0
+fahrenheit_to_celsius(32)    # 0.0
+fahrenheit_to_celsius(-40)   # -40.0
+```
+
+| Hàm | Công thức | Mô tả |
+|---|---|---|
+| `celsius_to_fahrenheit(celsius)` | `(celsius * 9/5) + 32` | Đổi °C sang °F |
+| `fahrenheit_to_celsius(fahrenheit)` | `(fahrenheit - 32) * 5/9` | Đổi °F sang °C |
+
 ---
 
 ## 3. Validator (`src/validator.py`)
